@@ -12,8 +12,8 @@ using TravelPackageService.Data;
 namespace TravelPackageService.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250922063941_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20251002150449_AddModelsToDb")]
+    partial class AddModelsToDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -136,7 +136,7 @@ namespace TravelPackageService.Migrations
                             Id = 1,
                             ArrivalCity = "MIA",
                             DepartureCity = "NYC",
-                            DepartureTime = new DateTime(2025, 10, 22, 6, 39, 40, 979, DateTimeKind.Utc).AddTicks(8670),
+                            DepartureTime = new DateTime(2025, 11, 1, 15, 4, 48, 794, DateTimeKind.Utc).AddTicks(6680),
                             FlightNumber = "AA123",
                             Price = 200m
                         });
@@ -243,10 +243,10 @@ namespace TravelPackageService.Migrations
                         {
                             Id = 1,
                             Description = "Relax in paradise",
-                            EndDate = new DateTime(2025, 10, 27, 6, 39, 40, 979, DateTimeKind.Utc).AddTicks(8610),
+                            EndDate = new DateTime(2025, 11, 6, 15, 4, 48, 794, DateTimeKind.Utc).AddTicks(6540),
                             Name = "Beach Getaway",
                             Price = 500m,
-                            StartDate = new DateTime(2025, 10, 22, 6, 39, 40, 979, DateTimeKind.Utc).AddTicks(8610)
+                            StartDate = new DateTime(2025, 11, 1, 15, 4, 48, 794, DateTimeKind.Utc).AddTicks(6540)
                         });
                 });
 

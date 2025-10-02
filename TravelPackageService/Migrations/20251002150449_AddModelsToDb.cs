@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace TravelPackageService.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class AddModelsToDb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -150,7 +150,7 @@ namespace TravelPackageService.Migrations
             migrationBuilder.InsertData(
                 table: "Flights",
                 columns: new[] { "Id", "ArrivalCity", "DepartureCity", "DepartureTime", "FlightNumber", "Price" },
-                values: new object[] { 1, "MIA", "NYC", new DateTime(2025, 10, 22, 6, 39, 40, 979, DateTimeKind.Utc).AddTicks(8670), "AA123", 200m });
+                values: new object[] { 1, "MIA", "NYC", new DateTime(2025, 11, 1, 15, 4, 48, 794, DateTimeKind.Utc).AddTicks(6680), "AA123", 200m });
 
             migrationBuilder.InsertData(
                 table: "Hotels",
@@ -160,7 +160,7 @@ namespace TravelPackageService.Migrations
             migrationBuilder.InsertData(
                 table: "TravelPackages",
                 columns: new[] { "Id", "Description", "EndDate", "Name", "Price", "StartDate" },
-                values: new object[] { 1, "Relax in paradise", new DateTime(2025, 10, 27, 6, 39, 40, 979, DateTimeKind.Utc).AddTicks(8610), "Beach Getaway", 500m, new DateTime(2025, 10, 22, 6, 39, 40, 979, DateTimeKind.Utc).AddTicks(8610) });
+                values: new object[] { 1, "Relax in paradise", new DateTime(2025, 11, 6, 15, 4, 48, 794, DateTimeKind.Utc).AddTicks(6540), "Beach Getaway", 500m, new DateTime(2025, 11, 1, 15, 4, 48, 794, DateTimeKind.Utc).AddTicks(6540) });
 
             migrationBuilder.InsertData(
                 table: "HotelRooms",

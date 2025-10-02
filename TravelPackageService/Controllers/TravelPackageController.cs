@@ -30,4 +30,10 @@ public class TravelPackageController : Controller
     [HttpGet("packages/{id}")]
     public async Task<IActionResult> GetPackageDetails(int id) =>
         Ok(await _service.GetPackageWithDetailsAsync(id));
+    
+    [HttpGet("Allpackages/{customerId}")]
+    public async Task<IActionResult> GetPackagesByDetailsCustomerIdAsync(int customerId) =>
+        Ok(await _service.GetPackagesByCustomerIdAsync(customerId));
+    
+    
 }
