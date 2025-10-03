@@ -85,9 +85,9 @@ public class UserService : IUserService
                 return (false, "Invalid email or password", null);
             }
 
-            // Generate JWT token if valid
+            // Generate token 
             var token = GenerateJwtToken(customer);
-            Log.Information("Customer authenticated successfully: {CustomerId}, TokenLength={TokenLength}", customer.Id, token.Length);
+            Log.Information("Customer authenticated successfully: {CustomerId}", customer.Id);
 
             return (true, "Authentication successful", token);
         }

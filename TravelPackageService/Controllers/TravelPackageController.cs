@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TravelPackageService.Core.Entity;
 using TravelPackageService.Service;
 
 namespace TravelPackageService.Controllers;
 
+[Authorize]
 public class TravelPackageController : Controller
 {
     private readonly ITravelPackageService _service;
